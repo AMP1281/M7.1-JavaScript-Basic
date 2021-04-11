@@ -1,29 +1,35 @@
 
 @import "reset";
 
+// Interfície gràfica
+
 html, body {
     height: 100vh;
     width: 100vw;
-    background: rgb(254, 251, 216);
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     align-items: center;
     }
-
     .padre{
         height: 60vh;
         width: 60vw;
         display: grid;
         grid-template-areas:
+            "pantalla"
             "primera"
             "segunda"
             "tercera"
             "quarta";
         grid-template-columns: 100%;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        background-color: rgb(218, 216, 216);
     }
-
+        .pantalla{
+            grid-area: pantalla;
+            display: grid;
+            grid-template-columns: 100%;
+        }
         .primera{
             grid-area: primera;
             display: grid;
@@ -44,3 +50,27 @@ html, body {
             display: grid;
             grid-template-columns: 25% 50% 25%;
         }
+            .negro{
+                display: grid;
+                width: 100%;
+                height: 100%;
+                justify-items: center;
+                align-items: center;
+            }
+            .nums{
+                place-self: center center;
+                width: 100%;
+            }
+            .operador{
+                place-self: center center;
+                width: 100%;
+            }
+            .resultado{
+                place-self: center center;
+                width: 100%;
+            }
+
+//Calculadora
+
+
+
