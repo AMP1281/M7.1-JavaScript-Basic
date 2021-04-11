@@ -74,41 +74,50 @@ html, body {
   width: 60vw;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "numero numero numero operador" "numero numero numero operador" "numero numero numero operador" "numero resultado resultado operador";
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: (1fr)[4];
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-areas: "primera" "segunda" "tercera" "quarta";
+  -ms-grid-columns: 100%;
+      grid-template-columns: 100%;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
-.numero {
+.primera {
   -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: numero;
+  grid-area: primera;
   display: -ms-grid;
   display: grid;
-  background-color: yellow;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
 }
 
-.operador {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 4;
-  -ms-grid-column: 4;
-  grid-area: operador;
+.segunda {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: segunda;
   display: -ms-grid;
   display: grid;
-  background-color: green;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
 }
 
-.resultado {
+.tercera {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: tercera;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+}
+
+.quarta {
   -ms-grid-row: 4;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: resultado;
+  -ms-grid-column: 1;
+  grid-area: quarta;
   display: -ms-grid;
   display: grid;
-  background-color: pink;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,26 +16,31 @@ html, body {
         width: 60vw;
         display: grid;
         grid-template-areas:
-            "numero numero numero operador"
-            "numero numero numero operador"
-            "numero numero numero operador"
-            "numero resultado resultado operador";
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(4,1fr);
+            "primera"
+            "segunda"
+            "tercera"
+            "quarta";
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
-        .numero{
-            grid-area: numero;
+        .primera{
+            grid-area: primera;
             display: grid;
-            background-color: yellow;
+            grid-template-columns: 25% 25% 25% 25%;
         }
-        .operador{
-            grid-area: operador;
+        .segunda{
+            grid-area: segunda;
             display: grid;
-            background-color: green;
+            grid-template-columns: 25% 25% 25% 25%;
         }
-        .resultado{
-            grid-area: resultado;
+        .tercera{
+            grid-area: tercera;
             display: grid;
-            background-color: pink;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .quarta{
+            grid-area: quarta;
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
         }
