@@ -117,7 +117,7 @@ html, body {
   grid-area: quarta;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-columns: 25% 50% 25%;
+      grid-template-columns: 25% 50% 25%;
 }
 /*# sourceMappingURL=style.css.map */
