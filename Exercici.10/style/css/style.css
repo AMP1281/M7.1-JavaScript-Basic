@@ -73,7 +73,7 @@ html, body {
   width: 60vw;
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "pantalla" "primera" "segunda" "tercera" "quarta";
+      grid-template-areas: "solucion" "primera" "segunda" "tercera" "quarta";
   -ms-grid-columns: 100%;
       grid-template-columns: 100%;
   -ms-grid-rows: 20% 20% 20% 20% 20%;
@@ -81,10 +81,10 @@ html, body {
   background-color: #dad8d8;
 }
 
-.pantalla {
+.solucion {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: pantalla;
+  grid-area: solucion;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 100%;
@@ -127,8 +127,8 @@ html, body {
   grid-area: quarta;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 50% 25%;
-      grid-template-columns: 25% 50% 25%;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
 }
 
 .negro {
@@ -143,6 +143,11 @@ html, body {
 }
 
 .nums {
+  place-self: center center;
+  width: 100%;
+}
+
+.limpiar {
   place-self: center center;
   width: 100%;
 }

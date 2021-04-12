@@ -16,7 +16,7 @@ html, body {
         width: 60vw;
         display: grid;
         grid-template-areas:
-            "pantalla"
+            "solucion"
             "primera"
             "segunda"
             "tercera"
@@ -25,8 +25,8 @@ html, body {
         grid-template-rows: 20% 20% 20% 20% 20%;
         background-color: rgb(218, 216, 216);
     }
-        .pantalla{
-            grid-area: pantalla;
+        .solucion{
+            grid-area: solucion;
             display: grid;
             grid-template-columns: 100%;
         }
@@ -48,7 +48,7 @@ html, body {
         .quarta{
             grid-area: quarta;
             display: grid;
-            grid-template-columns: 25% 50% 25%;
+            grid-template-columns: 25% 25% 25% 25%;
         }
             .negro{
                 display: grid;
@@ -58,6 +58,10 @@ html, body {
                 align-items: center;
             }
             .nums{
+                place-self: center center;
+                width: 100%;
+            }
+            .limpiar{
                 place-self: center center;
                 width: 100%;
             }
