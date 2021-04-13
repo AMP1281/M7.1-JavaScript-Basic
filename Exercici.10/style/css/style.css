@@ -91,7 +91,7 @@ html, body {
       grid-template-columns: 100%;
 }
 
-.primera {
+.primera, .segunda, .tercera, .quarta {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: primera;
@@ -105,30 +105,18 @@ html, body {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: segunda;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
 }
 
 .tercera {
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: tercera;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
 }
 
 .quarta {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
   grid-area: quarta;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
 }
 
 .negro {
@@ -142,22 +130,7 @@ html, body {
           align-items: center;
 }
 
-.nums {
-  place-self: center center;
-  width: 100%;
-}
-
-.limpiar {
-  place-self: center center;
-  width: 100%;
-}
-
-.operador {
-  place-self: center center;
-  width: 100%;
-}
-
-.resultado {
+.nums, .limpiar, .operador, .resultado {
   place-self: center center;
   width: 100%;
 }

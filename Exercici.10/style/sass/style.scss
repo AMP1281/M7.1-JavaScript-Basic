@@ -37,18 +37,15 @@ html, body {
         }
         .segunda{
             grid-area: segunda;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
+            @extend.primera;
         }
         .tercera{
             grid-area: tercera;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
+            @extend.primera;
         }
         .quarta{
             grid-area: quarta;
-            display: grid;
-            grid-template-columns: 25% 25% 25% 25%;
+            @extend.primera;
         }
             .negro{
                 display: grid;
@@ -62,19 +59,16 @@ html, body {
                 width: 100%;
             }
             .limpiar{
-                place-self: center center;
-                width: 100%;
+                @extend.nums;
             }
             .operador{
-                place-self: center center;
-                width: 100%;
+                @extend.nums;
             }
             .resultado{
-                place-self: center center;
-                width: 100%;
+                @extend.nums;
             }
 
-//Calculadora
+
 
 
 
