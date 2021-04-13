@@ -1,5 +1,4 @@
 
-
 //Variable primer valor operación
     var valor = "";
 
