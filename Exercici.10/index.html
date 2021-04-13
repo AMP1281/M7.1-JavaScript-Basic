@@ -88,14 +88,14 @@
         if (operador== "sumar"){
             document.getElementById("display").value= parseInt(valor1) + parseInt(valor2);
         }
-        if (operador== "dividir"){
+        else if (operador== "dividir"){
             if (valor2 == 0) {document.getElementById("display").value="No es posible dividir por cero";} 
             else {document.getElementById("display").value= parseInt(valor1) / parseInt(valor2);}
         }
-        if (operador== "multiplicar"){
+        else if (operador== "multiplicar"){
             document.getElementById("display").value= parseInt(valor1) * parseInt(valor2);
         }
-        if (operador== "restar"){
+        else {
             document.getElementById("display").value= parseInt(valor1) - parseInt(valor2);
         }
     }
